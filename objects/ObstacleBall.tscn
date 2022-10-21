@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=2]
+
+[sub_resource type="SpatialMaterial" id=4]
+flags_unshaded = true
+params_cull_mode = 1
+params_grow = true
+params_grow_amount = 0.05
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=5]
+next_pass = SubResource( 4 )
+params_diffuse_mode = 4
+params_specular_mode = 3
+albedo_color = Color( 0.827451, 0.0823529, 0.0823529, 1 )
+metallic_specular = 0.7
+roughness = 0.1
+
+[sub_resource type="SphereMesh" id=1]
+material = SubResource( 5 )
+
+[sub_resource type="SphereShape" id=2]
+
+[node name="RigidBody" type="RigidBody"]
+mass = 50.0
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = SubResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 2 )

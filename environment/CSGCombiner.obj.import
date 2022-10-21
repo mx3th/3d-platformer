@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/CSGCombiner.obj-f3f612119d7e0efe51261ae651e1d0ec.mesh"
+
+[deps]
+
+files=[ "res://.import/CSGCombiner.obj-f3f612119d7e0efe51261ae651e1d0ec.mesh" ]
+
+source_file="res://environment/CSGCombiner.obj"
+dest_files=[ "res://.import/CSGCombiner.obj-f3f612119d7e0efe51261ae651e1d0ec.mesh", "res://.import/CSGCombiner.obj-f3f612119d7e0efe51261ae651e1d0ec.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
